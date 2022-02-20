@@ -1,0 +1,29 @@
+@import url('http://fonts.cdnfonts.com/css/tt-norms-pro');                
+
+
+h2 {
+    font-family: 'TT Norms Pro', sans-serif; 
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.article-one {
+    margin-bottom: 20px;
+}
+
+.article-two {
+    margin-bottom: 20px;
+}
+
+.article-three {
+    margin-bottom: 20px;
+}
+
+p {
+    padding-bottom: 10px;
+    color: black;
+}

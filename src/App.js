@@ -1,8 +1,19 @@
 import React from 'react';
 import './App.css';
-import Articles from './Articles';
+import ArticleOne from './ArticleOne';
+import ArticleTwo from './ArticleTwo';
+import ArticleThree from './ArticleThree';
+import ArticleFour from './ArticleFour'
 import NewClock from './Clock.js';
-import Graph from './Graphs.js'
+import GraphOne from './GraphOne.js'
+import GraphTwo from './GraphTwo';
+import GraphThree from './GraphThree';
+import LineChart from './LineChart.js'
+import NotePad from './Notepad.js';
+import logo from './logo.png'
+import home from './home.png'
+import user from './user.png'
+import GraphFour from './GraphFour';
 
 function App() {
   return (
@@ -10,18 +21,15 @@ function App() {
        <div id="wrapper">
 
       <div id="sidebar-wrapper">
-        <div class="logo">
-          <a href="#"><img class="logo" src="https://i.imgur.com/FC4H30d.png"></img></a>
+        <div className="logo">
+          <a href="#"><img class="logo" src={logo}></img></a>
         </div>
         <ul>
-          <li class="active_link">
-            <a href="#"><i class="fas fa-tint"></i>Account</a>
+          <li className="home">
+            <a href="#"><i class="home"><img src={home}></img></i></a>
           </li>
-          <li>
-            <a href="#"><i class="fab fa-angellist"></i>Dashboard</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-archway"></i>Something Else</a>
+          <li className='account'>
+          <a href="#"><i class="account"><img src={user}></img></i></a>
           </li>
           
         </ul>
@@ -30,32 +38,53 @@ function App() {
       <div id="page-content-wrapper">
         <div class="row">
           <div class="card card1">
-            <Graph />
-            <div class="card1_title_wrapper">
-            </div>
-            <div class="card1_table_wrapper">
-            </div>
+            <GraphOne className='graphOne'/>
+            <GraphTwo className='graphTwo' />
+            <GraphThree />
+            <GraphFour />
           </div>
           <div class="card card2">
-            <NewClock />
-              </div>
+          <div class="fact-one">
+          <div className="article-two">
+            <a href="https://www.everydayhealth.com/columns/health-answers/the-mysteries-of-testosterone/"><h2 className='percents'>67%</h2></a>
+            <p>of girls have missed out on school due to lack ofperiod products.</p>
+        </div>
+            </div>
+            <div class="fact-two">
+            <div className="article-two">
+            <a href="https://www.everydayhealth.com/columns/health-answers/the-mysteries-of-testosterone/"><h2 className='percents'>31%</h2></a>
+            <p>of women wished they understood how their reproductive system works.</p>
+        </div>
+            </div>
+            <NotePad />
+          </div>
         </div>
         <div class="row row2">
           <div class="card card3">
-            <Articles />
+            <div class="part1">
+              <ArticleOne />
+            </div>
+            <div class="part2">
+              <ArticleTwo />
+            </div>
+            <div class="part3">
+              <ArticleThree />
+            </div>
+            <div class="part4">
+            <ArticleFour />
+            </div>
           </div>
           <div class="card card4">
-            <div class="card1_title_wrapper">
-              
-            </div>
-            <div class="card1_table_wrapper">
+            <h3 className='graph-header'> Level of agreement with aspects of health literacy for young people aged 18 to 24. </h3>
+          <LineChart />
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   );
 }
+
+
 
 export default App;

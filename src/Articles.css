@@ -3,27 +3,32 @@
 
 h2 {
     font-family: 'TT Norms Pro', sans-serif; 
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 20px;display: inline-block;
+    background-position-y: -0%;
+    background-image: linear-gradient( transparent 50%, #9500ff 50%);
+    transition: background .3s ease;
+    background-size: 2px;
+    background-size: auto 175%;
+    text-decoration: none;
+    font-weight: 600;
+   }
+   @media (min-width: 992px) {
+    .fancy__underline a:hover, .fancy__underline span:hover {
+       background-position-y: 100%;
+    }
 }
 
 a {
     text-decoration: none;
-    color: black;
-}
-
-.article-one {
-    margin-bottom: 20px;
-}
-
-.article-two {
-    margin-bottom: 20px;
-}
-
-.article-three {
-    margin-bottom: 20px;
+    color: white;
 }
 
 p {
-    padding-bottom: 10px;
-    color: black;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding-top: 10px;
+    color: white;
 }
+
